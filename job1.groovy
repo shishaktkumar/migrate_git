@@ -14,7 +14,6 @@ job('Job1') {
          REPO_ALIAS : 'delphix_task'
     )
     groovy ('''
-groovy ('''
 import hudson.*
 import jenkins.*
 import jenkins.model.*
