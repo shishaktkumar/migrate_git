@@ -80,14 +80,14 @@ echo buildnumber=${BUILD_NUMBER} > prop.properties
     }
   }
    
-   publishers {
-    /* postBuildScripts {
+  /* publishers {
+     postBuildScripts {
       archiveArtifacts {
         pattern('artifacts.tar')
         defaultExcludes(defaultExcludes = true)
         onlyIfSuccessful()
       }
-    }*/
+    }
     postBuildScripts {
       steps {
         shell('''#!/bin/bash
@@ -102,5 +102,5 @@ git push ${PUSH_REPO} ${BRANCH}
 ''')
       }
     }
-   }
+   }*/
 }
